@@ -48,7 +48,7 @@ stage('Build Image') {
 }
     stage('Deploy - Stage') {
         environment {
-        APP_NAMESPACE = "${yhpobo}-shopping-cart-stage"
+        APP_NAMESPACE = "${RHT_OCP4_DEV_USER}-shopping-cart-stage"
         QUAY = credentials('QUAY_USER')
         }
         steps {
